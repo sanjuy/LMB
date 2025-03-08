@@ -50,8 +50,8 @@ public class LoginController {
     @PostMapping("/process")
     public String getSuccess(@Valid @ModelAttribute("loginData") Login loginData, BindingResult result) {
         if (result.hasErrors()) {
-            // System.out.println(result);
-            return "loginView";
+        // System.out.println(result);
+        return "loginView";
         }
         
         System.out.println(loginData);
