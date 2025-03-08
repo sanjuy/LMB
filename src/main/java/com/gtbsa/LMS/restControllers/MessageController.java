@@ -26,12 +26,12 @@ public class MessageController {
     @PostMapping("/messages")
     public ResponseEntity<?> postMessage(@RequestBody Message entity) {
         return ResponseEntity.ok(messageService.saveMessage(entity));
-        }
+    }
 
-        @GetMapping("/messages")
-        public List<Message> getMessage() {
-            return messageService.getMessages();
-        }
+    @GetMapping("/messages")
+    public List<Message> getMessage() {
+        return messageService.getMessages();
+    }
         
 
 
